@@ -77,7 +77,7 @@ def run_normalization(adata, verbose = True):
     
     return adata
 
-def save_checkpiont(adata, path, verbose = True): 
+def save_checkpoint(adata, path, verbose = True): 
     """
     Save the AnnData object as an h5ad file.
 
@@ -91,7 +91,7 @@ def save_checkpiont(adata, path, verbose = True):
     adata.write_h5ad(path)
     
     if verbose:
-        print(f"Checkpoint saved at: {path}")\
+        print(f"Checkpoint saved at: {path}")
         
 def load_checkpoint(path, verbose = True): 
     """
