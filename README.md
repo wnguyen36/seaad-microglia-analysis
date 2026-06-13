@@ -154,8 +154,8 @@ Pseudobulk analysis using raw UMI counts summed per donor, CPM-normalized, log1p
 
 | Direction | Genes | Threshold |
 |---|---|---|
-| Upregulated (DAM-high) | 27 | FDR < 0.05, mean diff > 0.5 log1p-CPM |
-| Downregulated (DAM-high) | 22 | FDR < 0.05, mean diff < −0.5 log1p-CPM |
+| Upregulated (DAM-high) | 46 | FDR < 0.05, mean diff > 0.5 log1p-CPM |
+| Downregulated (DAM-high) | 23 | FDR < 0.05, mean diff < −0.5 log1p-CPM |
 
 **Top upregulated genes:** `S100A6`, `LINC00482`, `TIMP1`, `LGALS1` — complement and inflammation-associated
 
