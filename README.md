@@ -6,7 +6,7 @@ Single-cell transcriptomic analysis of **240,651 microglia** from the Seattle Al
 
 ## Overview
 
-Microglia are the brain's resident immune cells and a central player in Alzheimer's disease (AD) pathology. This project applies a complete single-cell RNA-seq analysis pipeline to the SEA-AD microglia dataset — one of the largest, most deeply annotated human brain single-cell datasets available — to characterize how microglial cell states shift with disease progression and genetic risk.
+Microglia are the brain's resident immune cells and have a central role in Alzheimer's disease (AD) pathology. This project applies a complete single-cell RNA-seq analysis pipeline to the SEA-AD microglia dataset in order to characterize how microglial cell states shift with disease progression and genetic risk.
 
 **Key questions addressed:**
 - Do disease-associated microglia (DAM) accumulate with increasing Braak stage and cognitive decline?
@@ -55,7 +55,7 @@ Microglia are the brain's resident immune cells and a central player in Alzheime
 
 ## Pipeline
 
-The analysis is structured as a modular Python package (`src/`) with a primary analysis notebook (`notebooks/SeaAD_Analysis.ipynb`).
+The analysis is structured as a modular Python package (`src/`) with a primary analysis notebook (`notebooks/SeaAD_Analysis.ipynb`). It is worth mentioning that this project was built on top of another scRNA-seq of the PBMC 3K dataset, as seen in notebooks 01-04. 
 
 ```
 SEA-AD-scRNAseq/
@@ -132,7 +132,7 @@ Donor-level Spearman correlations between mean DAM score and neuropathological v
 | Overall AD Neuropathological Change | +0.05 | 0.628 | No |
 | Age at Death | −0.04 | 0.739 | No |
 
-Cognitive status reached significance (ρ = 0.25, p = 0.022): donors with dementia averaged a DAM score of **0.705** vs **0.651** in cognitively intact donors (Δ = 0.054). Braak, CERAD, and Thal showed consistent positive trends that did not survive the 84-donor sample size — a pattern consistent with the effect size being real but requiring larger cohorts to confirm.
+Cognitive status reached significance (ρ = 0.25, p = 0.022): donors with dementia averaged a DAM score of **0.705** vs **0.651** in cognitively intact donors (Δ = 0.054). Braak, CERAD, and Thal showed consistent positive trends that did not survive the 84-donor sample size.
 
 DAM scores show a monotonic increase across Braak stages 0 → VI even without reaching significance, rising from a mean of **0.55** (Braak 0, n = 2) to **0.72** (Braak VI, n = 15), a **31% increase** in mean DAM activation across the full pathological spectrum.
 
@@ -148,7 +148,7 @@ Donor-aggregated DAM scores were compared across all microglial supertypes using
 | Micro-PVM_2 | Low | High | Negative |
 | Micro-PVM_1 | Lowest | Highest | Most negative |
 
-The activation scatter plot (DAM score vs homeostatic score, bubble sized by donor count) reveals a clean inverse axis: all SEAAD subtypes cluster in the high-DAM / low-homeostatic quadrant, while canonical subtypes occupy the opposite corner.
+The activation scatter plot (DAM score vs homeostatic score, bubble sized by donor count) reveals an inverse axis. All SEAAD subtypes cluster in the high-DAM / low-homeostatic quadrant, while canonical subtypes occupy the opposite corner.
 
 ### 3. APOE4 Carriers Show Elevated DAM Activation
 
@@ -159,7 +159,7 @@ At the donor level (one value per donor, avoiding pseudoreplication across 240K 
 | APOE4 non-carriers (2/2, 2/3, 3/3) | 59 | 0.646 |
 | APOE4 carriers (2/4, 3/4, 4/4) | 25 | 0.692 |
 
-APOE4 carriers show a **7.1% higher median DAM score** than non-carriers. The dose-response pattern is visible across all six genotypes — homozygous 4/4 carriers trend highest — consistent with APOE4's known role in potentiating microglial activation through impaired lipid clearance and TREM2 signaling.
+APOE4 carriers show a **7.1% higher median DAM score** than non-carriers. The dose-response pattern is visible across all six genotypes. Homozygous 4/4 carriers trend highest which is consistent with APOE4's known role in potentiating microglial activation through impaired lipid clearance and TREM2 signaling.
 
 ### 4. Pseudobulk Differential Expression: 69 Genes Distinguish DAM-high from DAM-low Donors
 
@@ -190,7 +190,7 @@ Donors were median-split on DAM score (42 DAM-high, 42 DAM-low). Pseudobulk anal
 | `CX3CR1` | — | — | Classical homeostatic microglia marker (in downregulated set) |
 | `AC009432.2` | −1.20 | 6.7×10⁻⁴ | Most strongly downregulated gene overall |
 
-The DAM–homeostatic axis is directly validated by the DE results: **APOE and SPP1** (canonical DAM signature genes) are among the top upregulated genes, while **P2RY12 and CX3CR1** (gold-standard homeostatic microglia markers) are significantly downregulated in DAM-high donors. This bidirectional pattern — canonical DAM genes up, canonical homeostatic genes down — is precisely what the mouse single-cell literature predicts for the DAM transition.
+The DAM–homeostatic axis is directly validated by the DE results: **APOE and SPP1** (canonical DAM signature genes) are among the top upregulated genes, while **P2RY12 and CX3CR1** (gold-standard homeostatic microglia markers) are significantly downregulated in DAM-high donors. This bidirectional pattern can also be seen in how mouse single-cell literature predicts for the DAM transition.
 
 > **Note on circularity:** Donors were grouped by the same DAM score computed from `adata.X`. DE results should therefore be treated as hypothesis-generating rather than independent validation. Confirmatory analysis would require an orthogonal grouping variable (e.g., Braak stage) or a held-out cohort.
 
