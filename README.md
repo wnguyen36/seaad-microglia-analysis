@@ -102,7 +102,7 @@ SEA-AD-scRNAseq/
 ## Gene Signatures
 
 ### Disease-Associated Microglia (DAM) — 27 genes
-Curated from Keren-Shaul et al. (2017, *Cell*), Krasemann et al. (2017), and Haage et al. (2024). Mouse-to-human ortholog conversion performed via MGI records; mouse-specific genes without confirmed 1:1 human orthologs excluded.
+Curated from Keren-Shaul et al. (2017, *Cell*), Krasemann et al. (2017), Haage et al. (2024), among other sources (see citations and/or code). Mouse-to-human ortholog conversion performed via MGI records; mouse-specific genes without confirmed 1:1 human orthologs excluded.
 
 **DAM stage 1:** `APOE`, `B2M`, `FTH1`, `CSTB`, `LYZ`, `CTSB`, `TYROBP`, `TIMP2`, `CTSD`
 
@@ -284,13 +284,31 @@ The DAM–homeostatic axis is directly validated by the DE results: **APOE and S
 
 ## References
 
-1. Keren-Shaul H, et al. (2017). A unique microglia type associated with restricting development of Alzheimer's disease. *Cell*, 169(7), 1276–1290. https://doi.org/10.1016/j.cell.2017.05.018
-2. Krasemann S, et al. (2017). The TREM2-APOE pathway drives the transcriptional phenotype of dysfunctional microglia in neurodegenerative diseases. *Immunity*, 47(3), 566–581.
-3. Haage V, et al. (2024). DAM revisited: new insights into microglial states in neurodegeneration.
-4. Butovsky O, et al. (2014). Identification of a unique TGF-β–dependent molecular and functional signature in microglia. *Nature Neuroscience*, 17, 131–143.
-5. Bennett ML, et al. (2016). New tools for studying microglia in the mouse and human CNS. *PNAS*, 113(12), E1738–E1746.
-6. Lambert JC, et al. (2013). Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease. *Nature Genetics*, 45, 1452–1458.
-7. SEA-AD Consortium. Seattle Alzheimer's Disease Brain Cell Atlas. Allen Institute for Brain Science. https://portal.brain-map.org/explore/seattle-alzheimers-disease
+1. Bennett, M. L., Bennett, F. C., Liddelow, S. A., et al. (2016). New tools for studying microglia in the mouse and human CNS. *Proceedings of the National Academy of Sciences*, 113(12), E1738–E1746. https://doi.org/10.1073/pnas.1525528113
+
+2. Buttgereit, A., Lelios, I., Yu, X., et al. (2016). Sall1 is a transcriptional regulator defining microglia identity and function. *Nature Immunology*, 17(12), 1397–1406. https://doi.org/10.1038/ni.3585
+
+3. Butovsky, O., Jedrychowski, M. P., Moore, C. S., et al. (2014). Identification of a unique TGF-β–dependent molecular and functional signature in microglia. *Nature Neuroscience*, 17(1), 131–143. https://doi.org/10.1038/nn.3599
+
+4. Haage, V., & De Jager, P. L. (2024). DAM revisited: new insights into microglial states in neurodegeneration. *Molecular Neurodegeneration*, 19, 84. https://doi.org/10.1186/s13024-024-00756-2
+
+5. Hickman, S. E., Kingery, N. D., Ohsumi, T. K., et al. (2013). The microglial sensome revealed by direct RNA sequencing. *Nature Neuroscience*, 16(12), 1896–1905. https://doi.org/10.1038/nn.3554
+
+6. Holtman, I. R., Skola, D., & Glass, C. K. (2020). Transcriptional control of microglia phenotypes in health and disease. *Journal of Clinical Investigation*, 127(9), 3220–3229. https://doi.org/10.1172/JCI90604
+
+7. Keren-Shaul, H., Spinrad, A., Weiner, A., et al. (2017). A unique microglia type associated with restricting development of Alzheimer's disease. *Cell*, 169(7), 1276–1290. https://doi.org/10.1016/j.cell.2017.05.018
+
+8. Krasemann, S., Madore, C., Cialic, R., et al. (2017). The TREM2-APOE pathway drives the transcriptional phenotype of dysfunctional microglia in neurodegenerative diseases. *Immunity*, 47(3), 566–581. https://doi.org/10.1016/j.immuni.2017.08.008
+
+9. Lambert, J. C., Ibrahim-Verbaas, C. A., Harold, D., et al. (2013). Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease. *Nature Genetics*, 45(12), 1452–1458. https://doi.org/10.1038/ng.2802
+
+10. Masuda, T., Sankowski, R., Staszewski, O., et al. (2020). Microglia heterogeneity in the single-cell era. *Cell Reports*, 30(5), 1271–1281. https://doi.org/10.1016/j.celrep.2020.107843
+
+11. Mouse Genome Informatics (MGI). The Jackson Laboratory, Bar Harbor, Maine. https://www.informatics.jax.org
+
+12. SEA-AD Consortium. (2023). Seattle Alzheimer's Disease Brain Cell Atlas. Allen Institute for Brain Science. https://portal.brain-map.org/explore/seattle-alzheimers-disease
+
+13. Yin, Z., Raj, D., Saiepour, N., et al. (2017). Immune hyperreactivity of Aβ plaque-associated microglia in Alzheimer's disease. *Neurobiology of Aging*, 55, 115–122. https://doi.org/10.1016/j.neurobiolaging.2017.03.021
 
 ---
 
