@@ -187,7 +187,6 @@ Donors were median-split on DAM score (42 DAM-high, 42 DAM-low). Pseudobulk anal
 | Gene | Mean Δ log1p(CPM) | FDR | Biology |
 |---|---|---|---|
 | `P2RY12` | −0.56 | 1.1×10⁻³ | Gold-standard homeostatic microglia marker |
-| `CX3CR1` | — | — | Classical homeostatic microglia marker (in downregulated set) |
 | `AC009432.2` | −1.20 | 6.7×10⁻⁴ | Most strongly downregulated gene overall |
 
 The DAM–homeostatic axis is directly validated by the DE results: **APOE and SPP1** (canonical DAM signature genes) are among the top upregulated genes, while **P2RY12 and CX3CR1** (gold-standard homeostatic microglia markers) are significantly downregulated in DAM-high donors. This bidirectional pattern can also be seen in how mouse single-cell literature predicts for the DAM transition.
